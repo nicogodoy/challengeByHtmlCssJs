@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge java script</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div className="nav">
+        <ul>
+          <li>
+            <a href="/"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li>
+            <button id="logout" class="btnLogout">
+              <i class="fa-solid fa-right-from-bracket"></i>Logout
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="container">
+      <form>
+        <h1 class="title">Login</h1>
+        <label
+          ><i class="fa-solid fa-user"></i
+          ><input
+            type="email"
+            id="email"
+            placeholder="email"
+            value="rql@gmail.com"
+        /></label>
+
+        <label
+          ><i class="fa-solid fa-lock"></i
+          ><input
+            type="password"
+            id="password"
+            placeholder="contraseña"
+            value="Rqlsistemas123*"
+        /></label>
+
+        <button id="button" type="submit">Login</button>
+      </form>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

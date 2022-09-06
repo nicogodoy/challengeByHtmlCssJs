@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to right, #006fe3, lightGray);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  text-align: center;
+  padding: 20px 25px;
+  box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+  border: 1px solid white;
+  border-radius: 15px;
+}
+form .title {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: rgb(107, 106, 106);
+}
+
+form label {
+  margin-bottom: 25px;
+}
+form label .fa-solid {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #006fe3;
+}
+form label input {
+  outline: none;
+  border: none;
+  color: #252525;
+  border-bottom: solid 1px #006fe3;
+  padding: 0 5px;
+}
+
+form label input::placeholder {
+  color: (37, 37, 37, 0.5);
+}
+form button {
+  color: #fff;
+  border: none;
+  background: #006fe3;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.tableContainer {
+  border: 0.5px solid rgb(228, 223, 223);
+  border-radius: 10px;
+  width: 700px;
+  height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.tableContainer::-webkit-scrollbar {
+  width: 10px;
+}
+.tableContainer::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: gray;
+}
+
+thead tr th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: lightGray;
+  border: 0.5px solid lightGray;
+  border-radius: 5px;
+}
+tbody tr:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+tr {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+li {
+  padding: 10px;
+  text-decoration: none;
+}
+li:hover {
+  background: lightgray;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+a {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+}
+.btnLogout {
+  border: none;
+  background: transparent;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+}
+i {
+  margin-right: 10px;
+  color: #fff;
+}
+
